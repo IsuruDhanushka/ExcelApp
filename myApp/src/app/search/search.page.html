@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-button>
+    
+    <ion-title>search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-searchbar (ionChange)="searchItem($event)"> 
+    
+  </ion-searchbar>
+
+  <ion-row>
+    <ion-col size="12" *ngFor="let item of filteredlist">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>{{item.regNo}}</ion-card-subtitle>
+          <ion-card-title>{{item.name}}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          {{item.school}}
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+
+</ion-content>
