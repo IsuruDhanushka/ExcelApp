@@ -12,20 +12,67 @@
       
     </ion-toolbar>
   </ion-header>
+
+
+  <ion-card>
+    <ion-card-header>
+      
+      <ion-card-title>Teacher's Details Search Sample App</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-row>
+        <ion-col class="ion-align-self-center">
+          <ion-img width="180" height="180" src="assets/logo.jpg"></ion-img>  
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-slides [options]="options">
+    <ion-slide>
+     <ion-grid>
+       <ion-row>
+         <ion-col size="12" class="poster-col">
+           <h1>Property Lone</h1>
+         </ion-col>
+       </ion-row>
+     </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" class="poster-col">
+            <h1>Guarantee Lone</h1>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" class="poster-col">
+            <h1>Goods Loan</h1>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+
 <ion-grid>
+  
   <ion-row>
-    <ion-col size="12">
-      <h3 class="ion-text-center">Teacher's Details Search Sample App</h3>
+    <ion-col class="ion-align-self-center">
+      <ion-button [routerLink]="'/search'" shape="round">Go To Search</ion-button>
     </ion-col>
   </ion-row>
 
-  <div text-center>
-    <ion-img width="180" height="180" src="assets/logo.jpg"></ion-img>  
- </div>
+  <ion-row>
+    <ion-col class="ion-align-self-center">
+      <ion-button  shape="round">EDCS Latest News & Events</ion-button>
+    </ion-col>
+  </ion-row>
 
- <div class="btn-center">
-  <ion-button [routerLink]="'/search'" shape="round">Go To Search</ion-button>
- </div>
 
 <ion-row style="text-align: center">
   
